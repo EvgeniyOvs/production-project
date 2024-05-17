@@ -1,16 +1,12 @@
-import { classNames } from 'shared/lib/classNames/classNames';
-import { useEffect, useState } from 'react';
 import { Button } from 'shared/ui/Button/Button';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-interface BugButtonProps {
-    className?: string;
-}
-
-// Компонент для тестирования ErrorBundary
-export const BugButton = ({ className } : BugButtonProps) => {
+// Компонент для тестирования ErrorBoundary
+export const BugButton = () => {
     const [error, setError] = useState(false);
-    const {t} = useTranslation();
+    const { t } = useTranslation();
+
     const onThrow = () => setError(true);
 
     useEffect(() => {
@@ -23,7 +19,7 @@ export const BugButton = ({ className } : BugButtonProps) => {
         <Button
             onClick={onThrow}
         >
-            {t('Пробросить ошибку')}
+            {t('throw error')}
         </Button>
     );
 };

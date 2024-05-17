@@ -1,9 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-
-import {
-    ThemeDecorator
-} from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 import { AppLink, AppLinkTheme } from './AppLink';
 
@@ -26,7 +23,6 @@ Primary.args = {
     theme: AppLinkTheme.PRIMARY,
 };
 
-
 export const Secondary = Template.bind({});
 Secondary.args = {
     children: 'Text',
@@ -38,6 +34,7 @@ Red.args = {
     children: 'Text',
     theme: AppLinkTheme.RED,
 };
+
 export const PrimaryDark = Template.bind({});
 PrimaryDark.args = {
     children: 'Text',
@@ -51,6 +48,7 @@ SecondaryDark.args = {
     theme: AppLinkTheme.SECONDARY,
 };
 SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
+
 export const RedDark = Template.bind({});
 RedDark.args = {
     children: 'Text',
