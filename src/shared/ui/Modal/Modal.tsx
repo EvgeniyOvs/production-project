@@ -51,7 +51,7 @@ export const Modal = (props : ModalProps) => {
         if (e.key === 'Escape') {
             closeHandler();
         }
-    }, []);
+    }, [closeHandler]);
 
     useEffect(() => {
         if (isOpen) {
