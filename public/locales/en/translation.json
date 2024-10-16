@@ -10,7 +10,11 @@
   "throw error": "throw error",
   "Главная": "Main",
   "О сайте": "About us",
-  "Переключить": "Switch",
+  "Переключить": "Переключить",
   "Короткий язык": "En",
-  "Войти": "Войти"
+  "Войти": "Login",
+  "increment": "increment",
+  "decrement": "decrement",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль"
 }
