@@ -11,6 +11,7 @@ export default {
     },
     clearMocks: true,
     testEnvironment: 'jsdom',
+    transformIgnorePatterns: ['/node_modules/(?!(axios)/)'],
     coveragePathIgnorePatterns: [
         '\\\\node_modules\\\\',
     ],
